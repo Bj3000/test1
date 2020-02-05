@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Do Something
-        run: echo Doing Something.
+        if: ${{ github.event.client_payload.text }}"==""
+        run: echo tom ingen text.
       - name: Do Something my
         run: 'echo "Event text: ${{ github.event.client_payload.text }}"'
