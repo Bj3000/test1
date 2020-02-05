@@ -9,3 +9,5 @@ jobs:
     steps:
       - name: Do Something
         run: echo Doing Something.
+      - name: Do Something my
+        run: echo Doing  my Something.
